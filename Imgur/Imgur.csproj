@@ -49,20 +49,92 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\CommentItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CommentItem.Designer.cs">
+      <DependentUpon>CommentItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\GalleryItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Components\GalleryItem.Designer.cs">
       <DependentUpon>GalleryItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\Pagination.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Pagination.Designer.cs">
+      <DependentUpon>Pagination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\PaginationService.cs" />
+    <Compile Include="Contract\AlbumContract.cs" />
+    <Compile Include="Contract\CommentContract.cs" />
+    <Compile Include="Contract\FavoriteContract.cs" />
+    <Compile Include="Contract\GallerySearchContract.cs" />
+    <Compile Include="Contract\UploadContract.cs" />
+    <Compile Include="Contract\VoteContract.cs" />
+    <Compile Include="Extension.cs" />
+    <Compile Include="Models\BasicDataModel.cs" />
+    <Compile Include="Models\ContentFormType.cs" />
+    <Compile Include="Models\ImageUploadRequest.cs" />
+    <Compile Include="Models\PaginationAction.cs" />
+    <Compile Include="Models\VoteType.cs" />
+    <Compile Include="Presenter\AlbumPresenter.cs" />
+    <Compile Include="Presenter\CommentPresenter.cs" />
+    <Compile Include="Presenter\CommentVotePresenter.cs" />
+    <Compile Include="Presenter\FavoritetPresenter.cs" />
+    <Compile Include="Presenter\ReplyPresenter.cs" />
+    <Compile Include="Presenter\UploadPresenter.cs" />
+    <Compile Include="Presenter\VotePresenter.cs" />
+    <Compile Include="Presenter\GallerySearchFormPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\AlbumForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AlbumForm.Designer.cs">
+      <DependentUpon>AlbumForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GalleryContentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\GalleryContentForm.Designer.cs">
+      <DependentUpon>GalleryContentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GalleryFavoriteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\GalleryFavoriteForm.Designer.cs">
+      <DependentUpon>GalleryFavoriteForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\GallerySearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\GallerySearchForm.Designer.cs">
       <DependentUpon>GallerySearchForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ImageUploadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ImageUploadForm.Designer.cs">
+      <DependentUpon>ImageUploadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MessageForm.Designer.cs">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Components\CommentItem.resx">
+      <DependentUpon>CommentItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\GalleryItem.resx">
+      <DependentUpon>GalleryItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Pagination.resx">
+      <DependentUpon>Pagination.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -72,6 +144,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\AlbumForm.resx">
+      <DependentUpon>AlbumForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\GalleryContentForm.resx">
+      <DependentUpon>GalleryContentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\GalleryFavoriteForm.resx">
+      <DependentUpon>GalleryFavoriteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\GallerySearchForm.resx">
+      <DependentUpon>GallerySearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ImageUploadForm.resx">
+      <DependentUpon>ImageUploadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MessageForm.resx">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

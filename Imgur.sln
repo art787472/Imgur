@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imgur", "Imgur\Imgur.csproj", "{E1FE0FDC-501E-4719-82DD-9B7D78B181CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "評論遞迴", "評論遞迴\評論遞迴.csproj", "{00EDD6AC-EEF5-421F-BD2B-7F03F6B1D6C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E1FE0FDC-501E-4719-82DD-9B7D78B181CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1FE0FDC-501E-4719-82DD-9B7D78B181CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1FE0FDC-501E-4719-82DD-9B7D78B181CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00EDD6AC-EEF5-421F-BD2B-7F03F6B1D6C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00EDD6AC-EEF5-421F-BD2B-7F03F6B1D6C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00EDD6AC-EEF5-421F-BD2B-7F03F6B1D6C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00EDD6AC-EEF5-421F-BD2B-7F03F6B1D6C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
